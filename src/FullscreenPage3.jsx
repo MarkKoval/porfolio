@@ -60,30 +60,6 @@ const FullScreenPage3 = ({ id }) => {
   const [openTools, setOpenTools] = React.useState(false);
   const [openInteractive, setOpenInteractive] = React.useState(false);
 
-  const handleClickOpenStudio = () => {
-    setOpenStudio(true);
-  };
-
-  const handleClickOpenWeb = () => {
-    setOpenWeb(true);
-  };
-
-  const handleClickOpenDesign = () => {
-    setOpenDesign(true);
-  };
-
-  const handleClickOpenDeveloping = () => {
-    setOpenDeveloping(true);
-  };
-
-  const handleClickOpenTools = () => {
-    setOpenTools(true);
-  };
-
-  const handleClickOpenInteractive = () => {
-    setOpenInteractive(true);
-  };
-
   const skills = {
     Studio: {
       Name: "Studio",
