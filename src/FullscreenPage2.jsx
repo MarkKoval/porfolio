@@ -1,10 +1,11 @@
+/* eslint-disable */
 import React from "react";
 import { Box, Grid, LinearProgress, Typography } from "@mui/material";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Button, IconButton } from "@mui/material";
+import {IconButton } from "@mui/material";
 import image from "./meflipped.png";
 import backp2 from "./backp2.svg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";

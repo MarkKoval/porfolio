@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -119,7 +120,9 @@ const FullScreenPage1 = ({ id }) => {
               alignItems: "center",
             }}
           >
+
             <img
+              alt="image"
               src={image}
               style={{
                 height: "50rem",

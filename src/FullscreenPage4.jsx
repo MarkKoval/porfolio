@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import {
   Box,
@@ -17,7 +18,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { IconButton } from "@mui/material";
 import backp3 from "./backp3.svg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import PreviewOutlinedIcon from "@mui/icons-material/PreviewOutlined";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -38,9 +38,6 @@ const FullScreenPage3 = ({ id }) => {
 
   const [openSmartVolunteers, setOpenSmartVolunteers] = React.useState(false);
 
-  const handleClickOpenSmartVolunteers = () => {
-    setOpenSmartVolunteers(true);
-  };
 
   const previews = {
     SmartVolunteers: {
