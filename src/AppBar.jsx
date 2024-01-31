@@ -73,12 +73,14 @@ function ResponsiveAppBar() {
     <AppBar
       position="sticky"
       style={{
+        zIndex: 800,
         background: "transparent",
         // background: "red",
         boxShadow: "none",
         height: "8rem",
         alignItems: "center",
         justifyContent: "center",
+        
       }}
     >
       <Container maxWidth="xxl">
