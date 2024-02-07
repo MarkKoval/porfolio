@@ -401,38 +401,43 @@ const FullScreenPage3 = ({ id }) => {
                         borderRadius: 8,
                         backgroundColor: skill.bgcolor,
                         position: "relative",
+                        // Define transitions for smooth effect on release (fade out)
                         transition:
-                          "background-color 1s ease-in-out, font-size 1s ease-in-out",
+                          "background-color 0.8s ease-in-out, font-size 0.8s ease-in-out",
+                        "&::before": {
+                          content: "'Review'",
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          backgroundColor: "rgba(0, 0, 0, 0.8)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontSize: "1.5rem",
+                          fontWeight: "bold",
+                          color: "#E5E4E2",
+                          zIndex: 1,
+                          opacity: 0, // Initially hidden
+                          transition: "opacity 0.5s ease-in-out", // Smooth transition for fading out
+                        },
                         "&:hover": {
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                           backgroundColor: skill.hover,
                           fontSize: "2.8rem",
                           "&::before": {
-                            content: "'Preview'",
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            background: "rgba(0, 0, 0, 0.8)",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontSize: "1.5rem",
-                            fontWeight: "bold",
-                            color: "#E5E4E2",
-                            zIndex: 1,
-                            opacity: 0, // Start with opacity 0
-                            transition: "opacity 1s ease-in-out",
+                            opacity: 1, // Show instantly on hover
+                            transition: "none", // No transition on hover for instant appearance
                           },
-                          "&:hover::before": {
-                            opacity: 1,
+                          ".content": {
+                            transform: "scale(1.3)",
+                            transition: "transform 0s", // No delay on transform for instant scaling
                           },
-                          "&:hover .content": {
-                            transform: "scale(1.3)", // Apply scale transform on hover
-                            transition: "transform 1s ease-in-out", // Add transition to content
-                          },
+                        },
+                        ".content": {
+                          transition: "transform 0.5s ease-in-out", // Ensure smooth scaling back
                         },
                       }}
                       key={skill.Name}

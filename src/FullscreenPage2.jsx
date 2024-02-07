@@ -1,16 +1,30 @@
 /* eslint-disable */
 import React from "react";
-import { Box, Grid, LinearProgress, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  LinearProgress,
+  Link,
+  Typography,
+} from "@mui/material";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import image from "./meflipped.png";
 import backp2 from "./backp2.svg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const FullScreenPage2 = ({ id }) => {
+  // const onDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.download = `./CV_Mark_Koval.pdf`;
+  //   link.href = "./CV_Mark_Koval.pdf";
+  //   link.click();
+  // };
+
   const progressValues = {
     HTML: 92,
     CSS: 83,
@@ -169,8 +183,8 @@ const FullScreenPage2 = ({ id }) => {
                       fontFamily: "ubuntu",
                       position: "absolute",
                       color: "#E5E4E2",
-                      fontSize:"1.25rem",
-                      fontWeight:"400",
+                      fontSize: "1.25rem",
+                      fontWeight: "400",
                     }}
                   >{`${value.toFixed(0)}%`}</Typography>
                   <LinearProgress
@@ -189,8 +203,8 @@ const FullScreenPage2 = ({ id }) => {
                   />
                   <Typography
                     style={{
-                      fontSize:"1.5rem",
-                      fontWeight:"400",
+                      fontSize: "1.5rem",
+                      fontWeight: "400",
                       fontFamily: "ubuntu",
                       userSelect: "none",
                       textTransform: "uppercase",
@@ -205,6 +219,14 @@ const FullScreenPage2 = ({ id }) => {
                 </div>
               ))}
             </Box>
+            <Button
+              variant="contained"
+              component={Link}
+              href="./CV_Mark_Koval.pdf"
+              download="CV_Mark_Koval.pdf"
+            >
+              Download CV
+            </Button>
           </Box>
         </Grid>
         <Grid
