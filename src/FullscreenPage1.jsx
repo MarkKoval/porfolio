@@ -132,6 +132,7 @@ const FullScreenPage1 = ({ id }) => {
                 position: "relative",
               }}
             >
+              
               <Typography
                 color="white"
                 sx={{
