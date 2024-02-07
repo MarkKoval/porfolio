@@ -16,15 +16,9 @@ import { IconButton } from "@mui/material";
 import image from "./meflipped.png";
 import backp2 from "./backp2.svg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import CV from "./CV.pdf";
 
 const FullScreenPage2 = ({ id }) => {
-  // const onDownload = () => {
-  //   const link = document.createElement("a");
-  //   link.download = `./CV_Mark_Koval.pdf`;
-  //   link.href = "./CV_Mark_Koval.pdf";
-  //   link.click();
-  // };
-
   const progressValues = {
     HTML: 92,
     CSS: 83,
@@ -51,8 +45,6 @@ const FullScreenPage2 = ({ id }) => {
           display: "flex",
           flexDirection: "row",
           backgroundColor: "rgba(0, 0, 0, 0.8)",
-          // alignItems: "left",
-          // justifyContent: "center",
         }}
       >
         <Grid
@@ -70,20 +62,16 @@ const FullScreenPage2 = ({ id }) => {
             sx={{
               width: "2.5rem",
               ml: "1.5rem",
-              // display: "flex",
-              // flexDirection: "column",
-              // bgcolor: "red",
             }}
           >
             <IconButton
               backgroundColor="transparent"
-              // Assuming you have a Link component for navigation
               href="https://instagram.com/_vovk.mark_"
               target="_blank"
               sx={{
                 my: 2,
                 color: "white",
-              }} // Add vertical spacing between icons
+              }}
             >
               <InstagramIcon fontSize="md" />
             </IconButton>
@@ -165,7 +153,6 @@ const FullScreenPage2 = ({ id }) => {
                 width: "46rem",
                 userSelect: "none",
                 color: "#E5E4E2",
-                // textTransform: "uppercase",
               }}
             >
               Developer with eager to contribute to the team's success through
@@ -220,12 +207,35 @@ const FullScreenPage2 = ({ id }) => {
               ))}
             </Box>
             <Button
+              sx={{
+                my: 1,
+                width: "30%",
+                borderRadius: 8,
+                backgroundColor: "#3D685F",
+
+                "&:hover": {
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundColor: "#0f8a70",
+                },
+              }}
               variant="contained"
               component={Link}
-              href="./CV_Mark_Koval.pdf"
+              href={CV}
               download="CV_Mark_Koval.pdf"
             >
-              Download CV
+              <Typography
+                sx={{
+                  fontFamily: "ubuntu",
+                  fontSize: "1.4rem",
+                  fontWeight: "600",
+                  userSelect: "none",
+                  color: "#E5E4E2",
+                  textTransform: "uppercase",
+                }}
+              >
+                Download CV
+              </Typography>
             </Button>
           </Box>
         </Grid>
@@ -249,8 +259,6 @@ const FullScreenPage2 = ({ id }) => {
               alignItems: "center",
             }}
           >
-            {/* <Blob style={{ height: "50rem", width: "auto",  }}/> */}
-
             <img
               src={image}
               style={{
@@ -268,7 +276,6 @@ const FullScreenPage2 = ({ id }) => {
             height: "100vh",
             display: "flex",
             alignItems: "center",
-            // justifyContent: "right",
             flexDirection: "column",
             pt: "50rem",
           }}

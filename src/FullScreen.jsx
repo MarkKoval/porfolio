@@ -8,7 +8,7 @@ import FullScreenPage3 from "./FullscreenPage3";
 import FullScreenPage4 from "./FullscreenPage4";
 import FullScreenPage5 from "./FullscreenPage5";
 
-const FullScreen= () => {
+const FullScreen = () => {
   const handleScroll = () => {
     const pages = document.querySelectorAll(".page");
 
@@ -19,9 +19,7 @@ const FullScreen= () => {
       const nextBound = nextPage ? nextPage.getBoundingClientRect() : null;
 
       if (bound.top < window.innerHeight / 2 && bound.bottom >= 0) {
-        // Current page is more than half visible
         if (nextBound && nextBound.top < window.innerHeight / 2) {
-          // Next page is also more than half visible, scroll to the next page
           scroller.scrollTo(nextPage.id, {
             duration: 500,
             delay: 0,

@@ -75,12 +75,10 @@ function ResponsiveAppBar() {
       style={{
         zIndex: 800,
         background: "transparent",
-        // background: "red",
         boxShadow: "none",
         height: "8rem",
         alignItems: "center",
         justifyContent: "center",
-        
       }}
     >
       <Container maxWidth="xxl">
@@ -103,9 +101,9 @@ function ResponsiveAppBar() {
                 fontWeight: 800,
                 userSelect: "none",
                 textTransform: "uppercase",
-                color:"white",
+                color: "white",
               }}
-              onClick = {handleClickScrollHome}
+              onClick={handleClickScrollHome}
             >
               koval mark
             </Button>

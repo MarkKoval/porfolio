@@ -52,13 +52,9 @@ html {
 }
 
 iframe {
-  border: 0px transparent; /* takes precedence over the width set with the HTML width attribute */
+  border: 0px transparent;
   border-radius: 20px;
 }
-
-/* .MuiPaper-root { 
-  background-color: black;
-} */
 
 .mat-dialog-actions {
   justify-content: center;

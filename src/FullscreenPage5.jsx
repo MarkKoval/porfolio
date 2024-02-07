@@ -20,7 +20,6 @@ import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 import axios from "axios";
 
 const FullScreenPage5 = ({ id }) => {
-  // form states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -55,15 +54,12 @@ const FullScreenPage5 = ({ id }) => {
       }, 3000);
     } catch (error) {
       if (error.response) {
-        // The request was made and the server responded with a status code
         console.error("Data:", error.response.data);
         console.error("Status:", error.response.status);
         console.error("Headers:", error.response.headers);
       } else if (error.request) {
-        // The request was made but no response was received
         console.error(error.request);
       } else {
-        // Something happened in setting up the request that triggered an Error
         console.error("Error", error.message);
       }
     }
@@ -88,8 +84,6 @@ const FullScreenPage5 = ({ id }) => {
           display: "flex",
           flexDirection: "row",
           backgroundColor: "rgba(0, 0, 0, 0)",
-          // alignItems: "left",
-          // justifyContent: "center",
         }}
       >
         <Grid
@@ -107,20 +101,16 @@ const FullScreenPage5 = ({ id }) => {
             sx={{
               width: "2.5rem",
               ml: "1.5rem",
-              // display: "flex",
-              // flexDirection: "column",
-              // bgcolor: "red",
             }}
           >
             <IconButton
               backgroundColor="transparent"
-              // Assuming you have a Link component for navigation
               href="https://instagram.com/_vovk.mark_"
               target="_blank"
               sx={{
                 my: 2,
                 color: "white",
-              }} // Add vertical spacing between icons
+              }}
             >
               <InstagramIcon fontSize="md" />
             </IconButton>
@@ -394,7 +384,6 @@ const FullScreenPage5 = ({ id }) => {
                 rows={8}
               />
               <Button
-                // onClick={}
                 type="submit"
                 variant="contained"
                 sx={{
@@ -441,13 +430,17 @@ const FullScreenPage5 = ({ id }) => {
             userSelect: "none",
           }}
         >
-          <AlertTitle sx={{
-            zIndex: 1000,
-            fontFamily: "ubuntu",
-            fontSize: "1.4rem",
-            fontWeight: "600",
-            userSelect: "none",
-          }}>Success</AlertTitle>
+          <AlertTitle
+            sx={{
+              zIndex: 1000,
+              fontFamily: "ubuntu",
+              fontSize: "1.4rem",
+              fontWeight: "600",
+              userSelect: "none",
+            }}
+          >
+            Success
+          </AlertTitle>
           Your submission was successful and has been received!
         </Alert>
       )}

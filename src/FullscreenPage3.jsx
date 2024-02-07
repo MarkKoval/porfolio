@@ -401,7 +401,6 @@ const FullScreenPage3 = ({ id }) => {
                         borderRadius: 8,
                         backgroundColor: skill.bgcolor,
                         position: "relative",
-                        // Define transitions for smooth effect on release (fade out)
                         transition:
                           "background-color 0.8s ease-in-out, font-size 0.8s ease-in-out",
                         "&::before": {
@@ -419,8 +418,8 @@ const FullScreenPage3 = ({ id }) => {
                           fontWeight: "bold",
                           color: "#E5E4E2",
                           zIndex: 1,
-                          opacity: 0, // Initially hidden
-                          transition: "opacity 0.5s ease-in-out", // Smooth transition for fading out
+                          opacity: 0,
+                          transition: "opacity 0.5s ease-in-out",
                         },
                         "&:hover": {
                           backgroundSize: "cover",
@@ -428,16 +427,16 @@ const FullScreenPage3 = ({ id }) => {
                           backgroundColor: skill.hover,
                           fontSize: "2.8rem",
                           "&::before": {
-                            opacity: 1, // Show instantly on hover
-                            transition: "none", // No transition on hover for instant appearance
+                            opacity: 1,
+                            transition: "none",
                           },
                           ".content": {
                             transform: "scale(1.3)",
-                            transition: "transform 0s", // No delay on transform for instant scaling
+                            transition: "transform 0s",
                           },
                         },
                         ".content": {
-                          transition: "transform 0.5s ease-in-out", // Ensure smooth scaling back
+                          transition: "transform 0.5s ease-in-out",
                         },
                       }}
                       key={skill.Name}

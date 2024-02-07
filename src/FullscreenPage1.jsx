@@ -30,8 +30,6 @@ const FullScreenPage1 = ({ id }) => {
           display: "flex",
           flexDirection: "row",
           backgroundColor: "rgba(0, 0, 0, 0)",
-          // alignItems: "left",
-          // justifyContent: "center",
         }}
       >
         <Grid
@@ -49,20 +47,16 @@ const FullScreenPage1 = ({ id }) => {
             sx={{
               width: "2.5rem",
               ml: "1.5rem",
-              // display: "flex",
-              // flexDirection: "column",
-              // bgcolor: "red",
             }}
           >
             <IconButton
               backgroundColor="transparent"
-              // Assuming you have a Link component for navigation
               href="https://instagram.com/_vovk.mark_"
               target="_blank"
               sx={{
                 my: 2,
                 color: "white",
-              }} // Add vertical spacing between icons
+              }}
             >
               <InstagramIcon fontSize="md" />
             </IconButton>
@@ -120,7 +114,6 @@ const FullScreenPage1 = ({ id }) => {
               alignItems: "center",
             }}
           >
-
             <img
               alt="image"
               src={image}
@@ -196,7 +189,6 @@ const FullScreenPage1 = ({ id }) => {
             height: "100vh",
             display: "flex",
             alignItems: "center",
-            // justifyContent: "right",
             flexDirection: "column",
             pt: "50rem",
           }}
