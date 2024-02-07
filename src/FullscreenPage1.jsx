@@ -12,6 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const FullScreenPage1 = ({ id }) => {
   return (
+    
     <Box
       id={id}
       sx={{
