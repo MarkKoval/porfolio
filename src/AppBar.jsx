@@ -15,7 +15,7 @@ function ResponsiveAppBar() {
   const handleClickScrollSkills = () => {
     const Skills = document.getElementById("page3");
     if (Skills) {
-      // 👇 Will scroll smoothly to the top of the next section
+
       Skills.scrollIntoView({ behavior: "smooth" });
     }
   };
