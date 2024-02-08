@@ -15,7 +15,6 @@ function ResponsiveAppBar() {
   const handleClickScrollSkills = () => {
     const Skills = document.getElementById("page3");
     if (Skills) {
-
       Skills.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -23,7 +22,6 @@ function ResponsiveAppBar() {
   const handleClickScrollHome = () => {
     const Home = document.getElementById("page1");
     if (Home) {
-      // 👇 Will scroll smoothly to the top of the next section
       Home.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -31,14 +29,12 @@ function ResponsiveAppBar() {
   const handleClickScrollContact = () => {
     const Contact = document.getElementById("page5");
     if (Contact) {
-      // 👇 Will scroll smoothly to the top of the next section
       Contact.scrollIntoView({ behavior: "smooth" });
     }
   };
   const handleClickScrollAbout = () => {
     const About = document.getElementById("page2");
     if (About) {
-      // 👇 Will scroll smoothly to the top of the next section
       About.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -46,7 +42,6 @@ function ResponsiveAppBar() {
   const handleClickScrollWorks = () => {
     const Works = document.getElementById("page4");
     if (Works) {
-      // 👇 Will scroll smoothly to the top of the next section
       Works.scrollIntoView({ behavior: "smooth" });
     }
   };
