@@ -90,7 +90,6 @@ function ResponsiveAppBar() {
             <Button
               sx={{
                 ml: "2rem",
-                textAlign: "rignt",
                 fontFamily: "Ubuntu",
                 fontSize: "36px",
                 fontWeight: 800,
